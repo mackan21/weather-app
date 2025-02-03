@@ -15,7 +15,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 4px;
+  border: solid 3px;
   border-color: white;
   border-radius: 50px;
   padding: 5px;
