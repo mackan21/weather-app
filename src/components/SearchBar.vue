@@ -25,21 +25,21 @@ input,
 button {
   border: none;
   background: transparent;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;
   outline: none;
 }
 ::placeholder {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 i {
   color: white;
   margin-right: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 input {
   margin-left: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 </style>
