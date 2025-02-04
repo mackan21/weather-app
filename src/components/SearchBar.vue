@@ -40,6 +40,6 @@ i {
 }
 input {
   margin-left: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 </style>
