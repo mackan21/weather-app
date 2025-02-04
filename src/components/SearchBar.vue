@@ -1,8 +1,30 @@
-<script setup></script>
+<script setup>
+//Funktion för reaktiva varibler/definerar händelsen som ska emitas
+import { ref, defineEmits } from "vue";
+
+//Variabel
+const city = ref("");
+
+//Skickar till HomeView att denna hendelse används
+const emit = defineEmits(["search"]);
+
+//Fubktion för sökning
+const search = () => {
+  if (city.value.trim()) {
+    emit("search", city.value);
+    city.value = "";
+  }
+};
+</script>
 <template>
-  <form action="">
-    <input type="text" autocomplete="off" placeholder="Search City" />
-    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+  <form @submit.prevent="search">
+    <input
+      type="text"
+      autocomplete="off"
+      placeholder="Search City"
+      v-model="city"
+    />
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
   </form>
 </template>
 <style scoped>
