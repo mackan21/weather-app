@@ -1,12 +1,7 @@
 <script setup></script>
 <template>
   <form action="">
-    <input
-      type="text"
-      id="search-input"
-      autocapitalize="off"
-      placeholder="Search City"
-    />
+    <input type="text" autocomplete="off" placeholder="Search City" />
     <button><i class="fa-solid fa-magnifying-glass"></i></button>
   </form>
 </template>
