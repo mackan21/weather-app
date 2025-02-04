@@ -8,10 +8,10 @@
       <li>Day</li>
     </ul>
     <ul>
-      <li>16<sup>o</sup></li>
-      <li>16<sup>o</sup></li>
-      <li>16<sup>o</sup></li>
-      <li>16<sup>o</sup></li>
+      <li>16</li>
+      <li>16</li>
+      <li>16</li>
+      <li>16</li>
     </ul>
   </section>
 </template>
