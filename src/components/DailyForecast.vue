@@ -1,17 +1,25 @@
-<script setup></script>
+<script setup>
+import { defineProps } from "vue";
+
+const props = defineProps({
+  forecast: Array,
+});
+</script>
 <template>
   <section>
     <ul>
-      <li>Day</li>
-      <li>Day</li>
-      <li>Day</li>
-      <li>Day</li>
+      <li v-for="day in forecast" :key="day.dt">
+        {{
+          new Date(day.dt * 1000).toLocaleDateString("en-GB", {
+            weekday: "short",
+          })
+        }}
+      </li>
     </ul>
     <ul>
-      <li>16</li>
-      <li>16</li>
-      <li>16</li>
-      <li>16</li>
+      <li v-for="day in forecast" :key="day.dt">
+        {{ Math.round(day.main.temp) }}°C
+      </li>
     </ul>
   </section>
 </template>

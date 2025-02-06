@@ -13,10 +13,13 @@
   text-align: center;
 }
 .router-button {
+  position: fixed;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 3px solid white;
   text-align: center;
   width: 6rem;
-  margin: auto;
   font-size: 1.2rem;
 }
 h1 {
