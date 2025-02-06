@@ -36,24 +36,24 @@ form {
   border-color: white;
   border-radius: 50px;
   padding: 5px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 input,
 button {
   border: none;
   background: transparent;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: white;
   outline: none;
 }
 ::placeholder {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 i {
   color: white;
   margin-right: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 input {
   margin-left: 0.5rem;

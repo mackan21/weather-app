@@ -17,7 +17,7 @@
   text-align: center;
   width: 6rem;
   margin: auto;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 h1 {
   text-align: center;
