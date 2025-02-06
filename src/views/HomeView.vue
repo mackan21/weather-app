@@ -38,7 +38,7 @@ const fetchWeather = async (city) => {
 <template>
   <h1>SkySpy</h1>
   <SearchBar @search="fetchWeather"></SearchBar>
-  <MainTemp></MainTemp>
+  <MainTemp v-if="weatherData" :weather="weatherData"></MainTemp>
   <DailyForecast></DailyForecast>
   <div class="router-button">
     <RouterLink to="/details" class="routerlink">Details</RouterLink>
