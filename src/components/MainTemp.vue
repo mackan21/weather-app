@@ -1,11 +1,14 @@
-<script setup></script>
+<script setup>
+import { defineProps } from "vue";
+
+const props = defineProps(["weather"]);
+</script>
 <template>
   <section class="weather-card">
-    <p id="name">Stockholm</p>
-    <p id="date">23-Feb-2025</p>
-    <p></p>
-    <p id="temp">16<sup>o</sup></p>
-    <p id="description">Moderate Rain</p>
+    <p id="name">{{ weather.name }}</p>
+    <p id="date">{{ new Date().toLocaleDateString("en-GB") }}</p>
+    <p id="temp">{{ Math.round(weather.main.temp) }}<sup>o</sup></p>
+    <p id="description">{{ weather.weather[0].description }}</p>
   </section>
 </template>
 <style scoped>
