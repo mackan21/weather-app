@@ -48,7 +48,7 @@ const fetchWeather = async (city) => {
 .routerlink {
   color: white;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .router-button {
   border: 3px solid white;

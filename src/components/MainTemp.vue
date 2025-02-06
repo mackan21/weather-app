@@ -13,19 +13,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 #name {
   font-size: 2rem;
 }
 #temp {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 sup {
-  font-size: 3rem;
+  font-size: 2rem;
   vertical-align: text-top;
 }
 #description {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 </style>

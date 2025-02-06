@@ -18,14 +18,11 @@
 <style scoped>
 li {
   list-style: none;
-  margin-top: 2rem;
-  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 section {
   display: flex;
   justify-content: space-between;
-}
-sup {
-  font-size: 1rem;
 }
 </style>
