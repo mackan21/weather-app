@@ -11,7 +11,7 @@ const props = defineProps({
       <li v-for="day in forecast" :key="day.dt">
         {{
           new Date(day.dt * 1000).toLocaleDateString("en-GB", {
-            weekday: "short",
+            weekday: "long",
           })
         }}
       </li>
