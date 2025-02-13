@@ -126,4 +126,16 @@ h1 {
     width: 350px;
   }
 }
+@media (min-width: 1023.5px) {
+  .details-container {
+    width: 1023.5px;
+  }
+  .details-card {
+    width: 500px;
+  }
+  .stats {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
 </style>

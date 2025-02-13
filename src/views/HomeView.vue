@@ -65,6 +65,20 @@ const weatherStore = useWeatherStore();
         </div>
       </div>
     </section>
+    <section class="forecast-section" v-if="weatherStore.forecastData.length">
+      <ul class="desktop-forecast">
+        <li v-for="day in weatherStore.forecastData" :key="day.dt">
+          <p>
+            {{
+              new Date(day.dt * 1000).toLocaleDateString("en-GB", {
+                weekday: "long",
+              })
+            }}
+          </p>
+          <p id="day-temp">{{ Math.round(day.main.temp) }}°C</p>
+        </li>
+      </ul>
+    </section>
   </div>
   <div class="router-button">
     <RouterLink to="/details" class="routerlink">Details</RouterLink>
@@ -90,23 +104,36 @@ h1 {
   text-align: center;
 }
 .desktop-container {
-  width: 100vw;
+  width: 1024px;
 }
 /* Desktop */
 /* Location section */
 .location {
-  margin-left: 10rem;
+  margin-left: 12rem;
+  margin-top: 2rem;
 }
 .location h2 {
   font-size: 3rem;
 }
+.location p {
+  margin-left: 1rem;
+}
 /* Temperature section */
 .temperature {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.main-temp,
+.sunrise-sunset {
+  width: 512px;
+  text-align: center;
 }
 #temp {
   font-size: 5rem;
+}
+#temp sup {
+  font-size: 2rem;
+  vertical-align: text-top;
 }
 #description {
   font-size: 1.1rem;
@@ -116,7 +143,27 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
-  gap: 3rem;
+  gap: 5rem;
+  padding-right: 12rem;
+}
+/* Forecast section */
+.desktop-forecast {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.desktop-forecast li {
+  border: solid 3px white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 135px;
+}
+#day-temp {
+  margin-top: 2rem;
 }
 @media (max-width: 1023.5px) {
   .desktop-container {
