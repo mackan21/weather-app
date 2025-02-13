@@ -42,7 +42,9 @@ form {
   border-color: white;
   border-radius: 50px;
   padding: 5px;
+  margin: auto;
   margin-top: 1rem;
+  width: 252px;
 }
 input,
 button {

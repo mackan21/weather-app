@@ -32,5 +32,12 @@ li {
 section {
   display: flex;
   justify-content: space-between;
+  width: 252px;
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  section {
+    display: none;
+  }
 }
 </style>

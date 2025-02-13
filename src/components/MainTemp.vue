@@ -31,4 +31,9 @@ sup {
 #description {
   font-size: 1.2rem;
 }
+@media (min-width: 1024px) {
+  .weather-card {
+    display: none;
+  }
+}
 </style>
