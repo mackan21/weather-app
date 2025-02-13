@@ -120,4 +120,10 @@ h1 {
 .data {
   margin-top: 1.5rem;
 }
+
+@media (min-width: 500px) {
+  .details-card {
+    width: 350px;
+  }
+}
 </style>
