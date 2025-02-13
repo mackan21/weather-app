@@ -24,7 +24,13 @@ const search = () => {
       placeholder="Search City"
       v-model="city"
     />
-    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <button type="submit">
+      <i
+        :class="
+          city ? 'fa-solid fa-arrow-right' : 'fa-solid fa-magnifying-glass'
+        "
+      ></i>
+    </button>
   </form>
 </template>
 <style scoped>
