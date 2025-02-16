@@ -160,7 +160,7 @@ h1 {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  width: 135px;
+  width: 170px;
 }
 #day-temp {
   margin-top: 2rem;
