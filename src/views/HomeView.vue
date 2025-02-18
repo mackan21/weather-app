@@ -1,18 +1,25 @@
 <script setup>
+//Pinia store
 import { useWeatherStore } from "../stores/weatherStore";
+
+//Komponenter
 import MainTemp from "../components/MainTemp.vue";
 import SearchBar from "../components/SearchBar.vue";
 import DailyForecast from "../components/DailyForecast.vue";
 
+//Data
 const weatherStore = useWeatherStore();
 </script>
 <template>
   <h1>SkySpy</h1>
+  <!-- Vid sökning anropas fetchweather -->
   <SearchBar @search="weatherStore.fetchWeather"></SearchBar>
+  <!-- Skickar data som prop till komponenten -->
   <MainTemp
     v-if="weatherStore.weatherData"
     :weather="weatherStore.weatherData"
   ></MainTemp>
+  <!-- Skickar data som prop till komponenten -->
   <DailyForecast
     v-if="weatherStore.forecastData.length"
     :forecast="weatherStore.forecastData"

@@ -1,11 +1,11 @@
 <script setup>
-//Funktion för reaktiva varibler/definerar händelsen som ska emitas
+//Skapar reaktiv data, Skickar händelse
 import { ref, defineEmits } from "vue";
 
-//Variabel
+//Variabel för sökning
 const city = ref("");
 
-//Skickar till HomeView att denna hendelse används
+//Skickar sökning till Homeview
 const emit = defineEmits(["search"]);
 
 //Fubktion för sökning

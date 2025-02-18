@@ -1,7 +1,11 @@
+//Skapar Pinia store
 import { defineStore } from "pinia";
+//Gör datan rektiv
 import { ref } from "vue";
+//Importering av Axios
 import axios from "axios";
 
+//Skapar en store med namnet weather
 export const useWeatherStore = defineStore("weather", () => {
   const apiKey = "31152b2bd9eca07728c87c4c9a4a26d7";
   const weatherData = ref(null);
@@ -24,6 +28,7 @@ export const useWeatherStore = defineStore("weather", () => {
       const uniqueDays = new Set();
       const today = new Date().toLocaleDateString("en-GB");
 
+      //Loop för att få ut 4 unika dagar från Api
       forecastResponse.data.list.forEach((entry) => {
         const date = new Date(entry.dt * 1000).toLocaleDateString("en-GB");
         if (

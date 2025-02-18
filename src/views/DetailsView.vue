@@ -1,6 +1,8 @@
 <script setup>
+//Importering av Pinia store
 import { useWeatherStore } from "../stores/weatherStore";
 
+//Data
 const weatherStore = useWeatherStore();
 </script>
 <template>
